@@ -1,21 +1,41 @@
 Ranking,Club,Pl,W,D,L,GD,Pts
 1,Manchester City,27,23,3,1,+59,72
-2,Manchester United,27,17,5,5,+32,56
-3,Liverpool,27,15,9,3,+30,54
-4,Chelsea,27,16,5,6,+26,53
-5,Tottenham Hotspur,27,15,7,5,+28,52
+2,Manchester United,28,18,5,5,+33,59
+3,Liverpool,28,16,9,3,+33,57
+4,Tottenham Hotspur,28,16,7,5,+29,55
+5,Chelsea,28,16,5,7,+25,53
 6,Arsenal,27,13,6,8,+15,45
-7,Burnley,27,9,9,9,-3,36
-8,Leicester City,27,9,8,10,-1,35
-9,Everton,27,9,7,11,-14,34
-10,Bournemouth,27,8,7,12,-10,31
-11,Watford,27,8,6,13,-10,30
-12,West Ham United,27,7,9,11,-12,30
-13,Newcastle United,27,7,7,13,-11,28
-14,Brighton and Hove Albion,27,6,10,11,-14,28
-15,Crystal Palace,27,6,9,12,-17,27
-16,Swansea City,27,7,6,14,-17,27
-17,Huddersfield Town,27,7,6,14,-24,27
-18,Southampton,27,5,11,11,-12,26
-19,Stoke City,27,6,7,14,-26,25
-20,West Bromwich Albion,27,3,11,13,-19,20
+7,Burnley,28,9,10,9,-3,37
+8,Leicester City,28,9,9,10,-1,36
+9,Everton,28,9,7,12,-15,34
+10,Watford,28,9,6,13,-9,33
+11,Bournemouth,28,8,8,12,-10,32
+12,Brighton and Hove Albion,28,7,10,11,-11,31
+13,West Ham United,28,7,9,12,-15,30
+14,Huddersfield Town,28,8,6,14,-23,30
+15,Newcastle United,28,7,8,13,-11,29
+16,Southampton,28,5,12,11,-12,27
+17,Crystal Palace,28,6,9,13,-18,27
+18,Swansea City,28,7,6,15,-20,27
+19,Stoke City,28,6,8,14,-26,26
+20,West Bromwich Albion,28,3,11,14,-20,20
+1,Manchester City,27,23,3,1,+59,72
+2,Manchester United,28,18,5,5,+33,59
+3,Liverpool,28,16,9,3,+33,57
+4,Tottenham Hotspur,28,16,7,5,+29,55
+5,Chelsea,28,16,5,7,+25,53
+6,Arsenal,27,13,6,8,+15,45
+7,Burnley,28,9,10,9,-3,37
+8,Leicester City,28,9,9,10,-1,36
+9,Everton,28,9,7,12,-15,34
+10,Watford,28,9,6,13,-9,33
+11,Bournemouth,28,8,8,12,-10,32
+12,Brighton and Hove Albion,28,7,10,11,-11,31
+13,West Ham United,28,7,9,12,-15,30
+14,Huddersfield Town,28,8,6,14,-23,30
+15,Newcastle United,28,7,8,13,-11,29
+16,Southampton,28,5,12,11,-12,27
+17,Crystal Palace,28,6,9,13,-18,27
+18,Swansea City,28,7,6,15,-20,27
+19,Stoke City,28,6,8,14,-26,26
+20,West Bromwich Albion,28,3,11,14,-20,20
