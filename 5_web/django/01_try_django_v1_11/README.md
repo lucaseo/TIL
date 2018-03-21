@@ -1,9 +1,6 @@
 
-<<<<<<< HEAD
 # **Django project walkthrough**
-=======
-# Django Project Tutorial Walkthrough
->>>>>>> 021a9268a201811721ba0f028b73d11843020943
+
 youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 
 * * * *
