@@ -1,5 +1,5 @@
 
-# Django project walkthrough
+# Django Project Tutorial Walkthrough
 youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 
 ## 20180319 (00:00:00 ~ 00:31:58)
