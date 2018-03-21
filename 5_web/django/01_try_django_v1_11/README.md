@@ -1,13 +1,15 @@
 
-# Django project walkthrough
+# **Django project walkthrough**
 youtube tutorial link : https://youtu.be/yDv5FIAeyoY
+
+* * * *
 
 ## 20180319 (00:00:00 ~ 00:31:58)
 
 ### Getting Started with Django
 #### Django environment setup
 
-#### keywords: 
+#### keywords:
 >- `virtualenv`
 >- `pip3 freeze`
 >- `startproject`
@@ -24,7 +26,7 @@ youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 ### What Django Does
 #### Creating new Django project and Django app
 
-#### keywords: 
+#### keywords:
 >- django app
 >- `startapp`
 >- view.py
@@ -36,20 +38,30 @@ youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 
 * * * *
 
-## 20180321 (00:45:14 ~ 00::00)
+## 20180321 (00:45:14 ~ 01:08:38)
 
-### What Django Does
-#### Creating new Django project and Django app
+### Rendering HTML
 
-#### keywords: 
->- django app
->- `startapp`
+#### keywords:
 >- view.py
->- url.py
->- runserver
+>- html string
+>- new template folder & base.html
+>- f string (available in Python3.6)
 
+### Rendering Django Templates
 
+#### keywords:
 
+>- base.py -> 'DIRS': [os.path.join(BASE_DIR, 'templates')],
+>- base.html -> {{}} --> context variable
 
+### Context in Django Templates
 
---------
+#### keywords:
+
+>- {%if...%} , {%endif%}
+>- {%for...%} , {%endfor%}
+>- {%verbatim%}, {%endverbatim%}  --> rendering out the actual code and variables between verbatim
+reference <https://docs.djangoproject.com/en/1.11/ref/templates/builtins/>
+
+* * * *
