@@ -34,9 +34,6 @@ youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 >- url.py
 >- runserver
 
-
-
-
 * * * *
 
 ## 20180321 (00:45:14 ~ 01:08:38)
@@ -66,3 +63,15 @@ youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 reference <https://docs.djangoproject.com/en/1.11/ref/templates/builtins/>
 
 * * * *
+
+## 20180323 (01:08:38 ~ 01:22:42)
+
+### Template Inheritance
+
+#### keywords:
+>- multiple functions in view.py file -> add corresponding functions into urls
+>- http://127.0.0.1:8000/home2, home 3 variation
+>- url.py - specifies extensions of url for each fucntions in view.py
+>- {% block content %}{% endblock content %} --> {& extends "base.html"&} , {% block content %}{% endblock content %}
+>- {{% block.super %}}
+>- <title>{% block head_title %}django1.11 tutorial{% endblock head_title %}</title> headline text and block/endblock to other pages
