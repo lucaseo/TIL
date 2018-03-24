@@ -3,7 +3,7 @@
 
 youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 
-* * * *
+<br>
 
 ## 20180319 (00:00:00 ~ 00:31:58)
 
@@ -20,7 +20,7 @@ youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 
 (reference : https://www.codingforentrepreneurs.com/blog/create-a-blank-django-project/)
 
-* * * *
+<br>
 
 ## 20180320 (00:31:58 ~ 00:45:14)
 
@@ -34,7 +34,7 @@ youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 >- url.py
 >- runserver
 
-* * * *
+<br>
 
 ## 20180321 (00:45:14 ~ 01:08:38)
 
@@ -62,7 +62,7 @@ youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 >- {%verbatim%}, {%endverbatim%}  --> rendering out the actual code and variables between verbatim
 reference <https://docs.djangoproject.com/en/1.11/ref/templates/builtins/>
 
-* * * *
+<br>
 
 ## 20180323 (01:08:38 ~ 01:22:42)
 
@@ -75,3 +75,17 @@ reference <https://docs.djangoproject.com/en/1.11/ref/templates/builtins/>
 >- {% block content %}{% endblock content %} --> {& extends "base.html"&} , {% block content %}{% endblock content %}
 >- {{% block.super %}}
 >- <title>{% block head_title %}django1.11 tutorial{% endblock head_title %}</title> headline text and block/endblock to other pages
+
+<br>
+
+## 20180324 (01:22:42 ~ 01:28:49)
+
+### Template Tag
+
+#### keywords:
+>- create new folder in templates : src/templates/snippets/nav.html
+>- nav as navigation. store navigation details
+>- {% include 'snippets/nav.html' %} --> now nav bars appears on all pages
+>- add more on src/templates/snippets/ --> css.html, js.html
+>- getbootstrap.com -> css, html, jquery CDN
+>- src/templates/snippets/sidebar.html
