@@ -16,11 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from restaurants.views import home, about, contact
+from restaurants.views import home, about, contact, contactView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home),
     url(r'about', about), # adding new pages
-    url(r'contact', contact), # adding new pages '-' is recommended
+    url(r'contact', contactView.as_view()), # adding new pages '-' is recommended
 ]

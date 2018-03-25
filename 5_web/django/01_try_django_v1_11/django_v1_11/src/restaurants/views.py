@@ -1,8 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views import View
+
 import random
 # Create your views here.
 # function base view
+
 
 # django template
 def home(request):
@@ -37,18 +40,7 @@ def contact(request):
     return render(request, "contact.html", context) #request, #contextvariable from base.html
 
 
-# standard html
-# def home_old(request):
-#     html_var = 'f strings' #f string available starting python3.6
-#     html_ = f"""<!doctype html>
-#     <html lang="en">
-#     <head>
-#     </head>
-#     <body>
-#     <h1>Hello World!</h1>
-#     <p>This is {html_var} coming through</p>
-#     </body>
-#     </html>
-#     """
-#     return HttpResponse(html_)
-#     # return render(request, "home.html", {}) #request
+class contactView(View):
+    def get(self, request, *args, **kargs):
+        context = {}
+        return render(request, "contact.html", context)

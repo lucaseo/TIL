@@ -89,3 +89,11 @@ reference <https://docs.djangoproject.com/en/1.11/ref/templates/builtins/>
 >- add more on src/templates/snippets/ --> css.html, js.html
 >- getbootstrap.com -> css, html, jquery CDN
 >- src/templates/snippets/sidebar.html
+
+
+## 20180325 (01:30:02 ~ 01:38:33)
+
+### Class Based View
+
+#### keywords:
+>- standard base views <https://docs.djangoproject.com/en/1.11/ref/class-based-views/>
