@@ -1,7 +1,7 @@
 
 # **Django project walkthrough**
 
-youtube tutorial link : https://youtu.be/yDv5FIAeyoY
+youtube tutorial link : <https://youtu.be/yDv5FIAeyoY>
 
 <br>
 
@@ -17,8 +17,7 @@ youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 >- manage.py
 >- base.py _vs_ local.py _vs_ production.py
 
-
-(reference : https://www.codingforentrepreneurs.com/blog/create-a-blank-django-project/)
+_reference_ : <https://www.codingforentrepreneurs.com/blog/create-a-blank-django-project/>)
 
 <br>
 
@@ -60,7 +59,8 @@ youtube tutorial link : https://youtu.be/yDv5FIAeyoY
 >- {%if...%} , {%endif%}
 >- {%for...%} , {%endfor%}
 >- {%verbatim%}, {%endverbatim%}  --> rendering out the actual code and variables between verbatim
-reference <https://docs.djangoproject.com/en/1.11/ref/templates/builtins/>
+
+_reference_ :  <https://docs.djangoproject.com/en/1.11/ref/templates/builtins/>
 
 <br>
 
@@ -90,10 +90,35 @@ reference <https://docs.djangoproject.com/en/1.11/ref/templates/builtins/>
 >- getbootstrap.com -> css, html, jquery CDN
 >- src/templates/snippets/sidebar.html
 
+<br>
 
 ## 20180325 (01:30:02 ~ 01:38:33)
 
 ### Class Based View
 
 #### keywords:
->- standard base views <https://docs.djangoproject.com/en/1.11/ref/class-based-views/>
+>- standard base views
+
+_reference_ : <https://docs.djangoproject.com/en/1.11/ref/class-based-views/>
+
+<br>
+
+## 20180325 (01:38:33 ~ 01:57:11)
+
+### Template View
+
+#### keywords:
+>- Template View : assigning a template
+>- `def get_context_data`
+
+_reference_ : https://docs.djangoproject.com/en/1.11/ref/class-based-views/base/#templateview
+
+### Remembering Things with Models
+
+#### keywords:
+>- `python3 manage.py createsuperuser` --> http://127.0.0.1:8000/admin/
+>- `python3 manage.py migrate` --> saves data into databse `db.sqlite3`
+>- lib/python3.6/site-packages/django/contrib/auth/models.py --> where data is stored
+>- restaurants/models.py --> create class ->project_uno/settings/base.py --> add app 'Restaurant'
+>- 2 steps : `python3 mange.py makemigrations` --> `python3 manage.py migrate` -> `Applying Restaurant.0001_initial... OK`
+>- bring to admin. --> check model object --> add data

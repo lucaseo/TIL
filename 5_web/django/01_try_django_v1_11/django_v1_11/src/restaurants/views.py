@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import View
+from django.views.generic import TemplateView
 
 import random
 # Create your views here.
@@ -26,21 +27,29 @@ def home(request):
     return render(request, "home.html", context) #request, #contextvariable from base.html
 
 
-def about(request):
-    context ={
+class homeView(TemplateView):
+    template_name = 'home.html'
 
-    }
-    return render(request, "about.html", context) #request, #contextvariable from base.html
+    def get_context_data(self, *args, **kwargs):  #overriding method which overriding TemplateView
+        context = super(homeView, self).get_context_data(*args, **kwargs)
+        num = None
+        some_list = [
+            random.randint(0, 100),
+            random.randint(0, 100),
+            random.randint(0, 100)
+        ]
+        condition_bool_item = True
+        if condition_bool_item:
+            num = random.randint(0, 100)
+        context = {
+            # 'bool_item': False,
+            'num': num,
+            'some_list': some_list
+        }
+        return context
 
+class aboutView(TemplateView):
+    template_name = 'about.html'
 
-def contact(request):
-    context = {
-
-    }
-    return render(request, "contact.html", context) #request, #contextvariable from base.html
-
-
-class contactView(View):
-    def get(self, request, *args, **kargs):
-        context = {}
-        return render(request, "contact.html", context)
+class contactView(TemplateView):
+    template_name = 'contact.html'
