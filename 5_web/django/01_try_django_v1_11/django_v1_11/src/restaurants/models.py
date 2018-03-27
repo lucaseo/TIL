@@ -2,5 +2,9 @@ from django.db import models
 
 # Create your models here.
 class RestaurantLocation(models.Model):
-    name     = models.CharField(max_length=120)
-    location = models.CharField(max_length=120, null=True, blank=True)
+    name          = models.CharField(max_length=120)
+    location      = models.CharField(max_length=120, null=True, blank=True)
+    category      = models.CharField(max_length=120, null=True, blank=False)
+    timestamp     = models.DateTimeField(auto_now_add=True)
+    update        = models.DateTimeField(auto_now=True)
+    # my_date_field = models.DateTimeField(auto_now=False, auto_now_add=False)

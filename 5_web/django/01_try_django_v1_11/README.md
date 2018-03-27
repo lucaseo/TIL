@@ -103,22 +103,14 @@ _reference_ : <https://docs.djangoproject.com/en/1.11/ref/class-based-views/>
 
 <br>
 
-## 20180325 (01:38:33 ~ 01:57:11)
+## 20180327 (01:57:11 ~ 02:06:13)
 
-### Template View
-
-#### keywords:
->- Template View : assigning a template
->- `def get_context_data`
-
-_reference_ : https://docs.djangoproject.com/en/1.11/ref/class-based-views/base/#templateview
-
-### Remembering Things with Models
+### More on Model Fields (ex. CharField, DateTimeField)
 
 #### keywords:
->- `python3 manage.py createsuperuser` --> http://127.0.0.1:8000/admin/
->- `python3 manage.py migrate` --> saves data into databse `db.sqlite3`
->- lib/python3.6/site-packages/django/contrib/auth/models.py --> where data is stored
->- restaurants/models.py --> create class ->project_uno/settings/base.py --> add app 'Restaurant'
->- 2 steps : `python3 mange.py makemigrations` --> `python3 manage.py migrate` -> `Applying Restaurant.0001_initial... OK`
->- bring to admin. --> check model object --> add data
+>- max_length=120 --> covers most of the characters
+>- null=True --> allowing null in the database
+>- blank=True --> allow leaving blank in build-in Django form
+>- DateTimeField : non nullable field --> timezone.now
+
+_reference_ : https://docs.djangoproject.com/en/2.0/ref/models/fields/
