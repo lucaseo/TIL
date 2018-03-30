@@ -114,3 +114,20 @@ _reference_ : <https://docs.djangoproject.com/en/1.11/ref/class-based-views/>
 >- DateTimeField : non nullable field --> timezone.now
 
 _reference_ : https://docs.djangoproject.com/en/2.0/ref/models/fields/
+
+<br>
+
+## 20180330 (02:06:13 ~ 02:16:04)
+
+### Displaying Saved Data
+
+#### keywords:
+>- queryset :
+>- ```<ul>
+  {% for obj in object_list%}
+    <li> {{obj.name}} {{obj.location}} {{obj.category}} {{obj.timestamp}} {{obj.updated}} </li>```
+>- tiemzone settings : settings/base.py(& local.py , production.py) --> timezone = "Asia/Seoul"
+>- models.py -->
+```def __str__(self):  
+return self.name```
+--> return object name on admin page
