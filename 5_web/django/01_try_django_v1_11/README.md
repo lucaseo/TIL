@@ -123,14 +123,14 @@ _reference_ : https://docs.djangoproject.com/en/2.0/ref/models/fields/
 
 #### keywords:
 >- queryset :
->- `<ul>
+>- ` <ul>
   {% for obj in object_list%}
-    <li> {{obj.name}} {{obj.location}} {{obj.category}} {{obj.timestamp}} {{obj.updated}} </li>`
+    <li> {{obj.name}} {{obj.location}} {{obj.category}} {{obj.timestamp}} {{obj.updated}} </li> `
+
 >- tiemzone settings : settings/base.py(& local.py , production.py) --> timezone = "Asia/Seoul"
+
 >- models.py -->
-`def __str__(self):  
-return self.name`
---> return object name on admin page
+`def __str__(self): return self.name` --> return object name on admin page
 
 
 <br>
