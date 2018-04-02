@@ -132,3 +132,43 @@ _reference_ : https://docs.djangoproject.com/en/2.0/ref/models/fields/
 `def __str__(self):  
 return self.name`
 --> return object name on admin page
+
+<br>
+
+## 20180402 (02:16:04 ~ )
+
+### Understanding Queryset
+
+#### key practice codes:
+>- So what exactly is Queryset?  
+  - List of objects received when approaching to a data through functions.
+
+<br>
+
+>- on `python3 manage.py shell`
+>- `from restaurants.models import RestaurantLocation`
+>- `RestaurantLocation.objects.all()` --> Queryset
+>- `for object in RestaurantLocation.objects.all():
+print(object.name)`
+>- `qs = RestaurantLocation.objects.all()
+qs.filter(category__iexact='American Pub'`
+>>- `<QuerySet [<RestaurantLocation: The Booth Brewary>]>`
+>- `qs.update(category='Pizza')` #update all categories at once
+
+>Adding new obj #1
+>- `obj=RestaurantLocation()`
+>- `obj.name = "Pei Wei"`
+>- `obj.location = "Incheon"`
+>- `obj.category = "Chinese"`  
+>- `obj`
+>> `RestaurantLocation: Pei Wei`
+>> However, timestamp won't setup itself this way.
+
+>Adding new obj #2 (with timestamp !)
+>- `obj = RestaurantLocation.objects.create(name='Suzuran', location='Bundang', category='Japanese')
+`
+>- `obj.timestamp`
+>> `datetime.datetime(2018, 4, 2, 12, 51, 0, 99929, tzinfo=<UTC>)`
+
+>- filtering `qs2 = RestaurantLocation.objects.filter(category__iexact='Beer Pub')`
+>- filtering with excluding certain objects `qs = RestaurantLocation.objects.filter(category__iexact='Beer Pub').exclude(name__icontains='Brewary')`
