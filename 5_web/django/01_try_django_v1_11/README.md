@@ -123,8 +123,7 @@ _reference_ : https://docs.djangoproject.com/en/2.0/ref/models/fields/
 
 #### keywords:
 >- queryset :
->- `
-<ul>
+>- `<ul>
   {% for obj in object_list%}
     <li> {{obj.name}} {{obj.location}} {{obj.category}} {{obj.timestamp}} {{obj.updated}} </li>`
 >- tiemzone settings : settings/base.py(& local.py , production.py) --> timezone = "Asia/Seoul"
@@ -133,9 +132,11 @@ _reference_ : https://docs.djangoproject.com/en/2.0/ref/models/fields/
 return self.name`
 --> return object name on admin page
 
+
 <br>
 
-## 20180402 (02:16:04 ~ )
+
+## 20180402 (02:16:04 ~ 02:25:21)
 
 ### Understanding Queryset
 
