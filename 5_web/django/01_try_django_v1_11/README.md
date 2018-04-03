@@ -173,3 +173,28 @@ qs.filter(category__iexact='American Pub'`
 
 >- filtering `qs2 = RestaurantLocation.objects.filter(category__iexact='Beer Pub')`
 >- filtering with excluding certain objects `qs = RestaurantLocation.objects.filter(category__iexact='Beer Pub').exclude(name__icontains='Brewary')`
+
+<br>
+
+## 20180403 (02:25:21 ~ 02:34:23)
+
+### Generic List View
+
+#### key concept & practice codes:
+>
+```
+def get_queryset(self):
+      print(self.kwargs)
+      slug = self.kwargs.get("slug")
+      if slug:
+          queryset = RestaurantLocation.objects.filter(
+              Q(category__icontains=slug) |
+              Q(category__iexact=slug)
+          )
+      else:
+          queryset = RestaurantLocation.objects.none
+      return queryset
+      ```
+>- `from django.db.models import Q` on views.py (Q look ups -- queryset lookup)
+>- change restaurant/restaurant_list.html template name to default html `restaurantlocation_list.html` (from the model)
+<br>
