@@ -7,8 +7,10 @@
 
 import scrapy
 
-
-class InflearnTutorialItem(scrapy.Item):
+# 1. 아이템 정의
+class Dmoz_books(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
+    title = scrapy.Field()
+    link = scrapy.Field()
+    desc = scrapy.Field()
     pass
