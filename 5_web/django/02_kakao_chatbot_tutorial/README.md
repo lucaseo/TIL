@@ -50,4 +50,11 @@ Refrence : <http://codeac.tistory.com/entry/Python으로-카카오톡-플러스�
     - APP URL 에서 http://내서버:8000 API 테스트 반응하는지 확인
     - API형 시작하기
   - 관리페이지 --> 공개 설정
-  - 카카오톡에서 제대로 검색 및 실행하는지 확인
+  - 카카오톡에서 검색 후 제대로 검색 및 실행하는지 확인
+
+### 3장
+
+@csrf_exempt는 카카오톡에서 message를 내 서버로 전송할 때 데이터를 post값으로 전송하기 때문에 Django에서 post 값으로 데이터를 전송 할 때 오류를 방지.
+
+- message 함수 구현
+- message 함수까지 카카오톡 API에 구현

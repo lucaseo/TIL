@@ -14,12 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
 from django.conf.urls import url
 from chatbot_app import views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^keyboard', views.keyboard),
+    url(r'^keyboard/', views.keyboard),
     url(r'^message', views.message),
 ]
