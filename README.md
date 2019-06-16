@@ -1,5 +1,5 @@
 # Today I Learned
 
 
-#### Starting Date
+#### Starting Date:
 - 2017년 02월 07일 
